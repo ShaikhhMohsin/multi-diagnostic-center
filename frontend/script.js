@@ -141,7 +141,19 @@ if(loginForm){
 
         const data = await response.json();
 
-        alert(data.message);
+        if(data.message === "Login Successful"){
+
+    alert(data.message);
+
+    window.location.href = "dashboard.html";
+
+}
+
+else{
+
+    alert(data.message);
+
+}
 
         loginForm.reset();
 
