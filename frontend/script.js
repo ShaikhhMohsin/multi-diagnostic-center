@@ -18,7 +18,7 @@ if(appointmentForm){
 
         const test = document.getElementById("appointmentTest").value;
 
-        const response = await fetch("http://localhost:5000/api/appointments/book", {
+        const response = await fetch("https://multi-diagnostic-center.onrender.com/api/appointments/book", {
 
             method: "POST",
 
@@ -76,7 +76,7 @@ if(registerForm){
 
         }
 
-        const response = await fetch("http://localhost:5000/api/auth/register", {
+        const response = await fetch("https://multi-diagnostic-center.onrender.com/api/auth/register", {
 
             method: "POST",
 
@@ -120,7 +120,7 @@ if(loginForm){
 
         const password = document.getElementById("loginPassword").value;
 
-        const response = await fetch("http://localhost:5000/api/auth/login", {
+        const response = await fetch("https://multi-diagnostic-center.onrender.com/api/auth/login", {
 
             method: "POST",
 
