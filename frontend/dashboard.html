@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+    <h1>Multi Diagnostic Center</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="admin.html">Admin Dashboard</a>
+
+        <a href="login.html">Logout</a>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+    </nav>
+
+</header>
+    <section class="admin-dashboard">
+
+        <h2>
+            My Appointments
+        </h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Test</th>
+                    <th>Date</th>
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="dashboardTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
